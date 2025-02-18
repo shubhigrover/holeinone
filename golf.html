@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hole In One Golf Resort - Golf</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            background-color: #f5f3e7;
+            margin: 0;
+        }
+
+        header {
+            padding: 1rem 0;
+            color: #f5f3e7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu, .logo, nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        main {
+            text-align: center;
+            margin: 1.5rem 0; /* Adjusted margin */
+        }
+
+        h1 {
+            margin-top: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .golf-page {
+            text-align: left;
+            margin: 2rem auto;
+            width: 90%; 
+        }
+
+        .courses-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .course {
+            width: 45%;
+            margin: 1rem 0;
+            text-align: left;
+        }
+
+        .course img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .additional-info {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .note {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .book-tee-time-btn {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-tee-time-btn:hover {
+            background-color: #1a242f;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin: 0 0.5rem;
+        }
+
+        .social-icons img {
+            height: 40px;
+        }
+
+        .subscribe-btn {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #2c3e50;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="menu-icon.png" alt="Menu" id="menu-icon">
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Hole In One Logo"></a>
+        </div>
+        <nav id="nav-menu" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="golf.html">Golf</a></li>
+                <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Golf</h1>
+        <div class="golf-page">
+            <div class="courses-section">
+                <div class="course">
+                    <p>The Pinecrest Course is nestled in a quiet valley, surrounded by tall pines and winding streams.
+                        With its gentle fairways and pristine greens, this course offers a peaceful retreat for golfers
+                        seeking a relaxed yet rewarding round.</p>
+                    <img src="course1.png" alt="Course #1">
+                    <h3>The Pinecrest Course</h3>
+                </div>
+                <div class="course">
+                    <h3>The Sea View Course</h3>
+                    <img src="course2.png" alt="Sea View Course">
+                    <p>Experience the perfect blend of seaside beauty and exceptional playability at The Sea View
+                        Course. Located along the sparkling coastline, this course combines challenging holes with
+                        awe-inspiring ocean views. The gentle sea breeze and the sound of waves provide a tranquil
+                        backdrop for every swing.</p>
+                </div>
+                <div class="course">
+                    <p>Set amidst tall trees and scenic mountain backdrops, the Ridgewood Course is full of natural beauty and elevation changes. The course’s strategic layout ensure an engaging experience for players of all skill levels.</p>
+                    <img src="course3.png" alt="Course #3">
+                    <h3>The Ridgewood Course</h3>
+                </div>
+            </div>
+            <div class="additional-info">
+                <p class="note">Booking for caddie services can be done from the activities page</p>
+                <a href="https://forms.gle/b2wYF78NsHKXUjPF8" class="book-tee-time-btn" target="_blank">Book A Tee Time</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://gmail.com" target="_blank"><img src="gmail-icon.png" alt="Email"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://forms.gle/b2wYF78NsHKXUjPF8" class="subscribe-btn" target="_blank">Subscribe for Updates</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

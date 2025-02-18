@@ -1,0 +1,586 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f3e7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #f5f3e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.menu {
+  position: absolute;
+  left: 20px;
+}
+
+.menu img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 50px;
+}
+
+#nav-menu {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-color: #f5f3e7;
+  border: 1px solid #ccc;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-menu ul li {
+  border-bottom: 1px solid #ccc;
+}
+
+#nav-menu ul li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: left;
+}
+
+#nav-menu ul li a:hover {
+  background-color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  margin-top: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.hero-text h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.address {
+  text-align: center;
+  padding: 20px;
+}
+
+.address p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.book-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer .social-icons img {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer .subscribe-btn {
+  background: #004aad;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+#nav-menu {
+  z-index: 1000;
+  /* Added z-index to ensure it stays on top */
+}
+
+.golf-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.courses-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.course {
+  flex: 1;
+  max-width: 30%;
+  /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.course h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.course p {
+  font-size: 1em;
+  color: #666;
+  margin: 10px 0;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.note {
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.book-tee-time-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.packages-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.packages-heading h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.packages {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.package {
+  flex: 1;
+  max-width: 30%;
+  /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.package img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.package h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.package p {
+  font-size: 1em;
+  color: #666;
+  margin: 10px 0;
+}
+
+.book-now-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.custom-note {
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.subscribe-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.description {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.book-room {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3e7;
+  /* Set your desired background color */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f3e7;
+  /* Set the same background color as the body */
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.restaurant {
+  padding: 20px;
+
+  /* Set the same background color as the body */
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.restaurant-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  /* Set a background color to separate the items */
+}
+
+.restaurant-item img {
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.restaurant-info {
+  flex: 1;
+}
+
+.restaurant-info h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.restaurant-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+.reservation {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.content-section img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.text-section {
+  max-width: 45%;
+  margin: 10px;
+}
+
+.text-section p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.text-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.text-section ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.book-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.book-button:hover {
+  background-color: #444;
+}
+
+.main-content {
+  font-family: Arial, sans-serif;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 150px;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.text-section {
+  max-width: 600px;
+  text-align: center;
+  margin: 10px;
+}
+
+.text-section p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.inquiry-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.inquiry-button:hover {
+  background-color: #444;
+}
+
+.accom-title {
+  margin-top: 100px;  /* Adjust this value to move the text down */
+}
